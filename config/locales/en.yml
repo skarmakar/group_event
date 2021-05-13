@@ -1,0 +1,8 @@
+en:
+  group_event:
+    validation:
+      all_blank: Please provide at least one of %{keys}
+      end_date: should be greater than start date
+      duration: is not matching with start date and end date
+  controller:
+    resource_not_found: Requested resource not found

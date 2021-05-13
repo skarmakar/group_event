@@ -1,0 +1,15 @@
+default: &default
+  host: localhost
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: root
+  password: password
+
+development:
+  <<: *default
+  database: group_event_development
+
+test:
+  <<: *default
+  database: group_event_test
